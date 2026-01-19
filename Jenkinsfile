@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git 'https://github.com/aarchi123-34/jenkins-demo.git'
+        git branch: 'main', url: 'https://github.com/aarchi123-34/jenkins-demo.git'
       }
     }
 
@@ -27,3 +27,4 @@ pipeline {
     }
   }
 }
+
